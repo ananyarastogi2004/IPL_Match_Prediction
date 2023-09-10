@@ -1,7 +1,7 @@
 
 
 #import the libraries
-
+import gzip
 import math
 import numpy as np
 import pickle
@@ -13,8 +13,9 @@ st.set_page_config(page_title='IPL_Score_Predictor',layout="centered")
 
 #Get the ML model 
 
-filename='ml_model.pkl'
-model = pickle.load(open(filename,'rb'))
+with gzip.open('model.pkl.gz', 'rb') as f:
+    # Read the decompressed data
+    model = pickle.load(f)
 
 #Title of the page with CSS
 
@@ -130,7 +131,7 @@ if st.button('Predict Score'):
     my_prediction = int(round(predict[0]))
     
     #Display the predicted Score Range
-    x=f'**PREDICTED MATCH SCORE : {my_prediction-5} to {my_prediction+5}**' 
+    x=f'**PREDICTED MATCH SCORE : {my_prediction-3} to {my_prediction+3}**' 
     st.success(x)
 
 
