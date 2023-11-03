@@ -7,6 +7,8 @@ A. Score Prediction Model
 
 The GUI requires at least 5 overs of the data to predict thescore .The model requires the input data of Batting team, Bowling team, Over, Runs, Wickets, Run Scored in last 5 overs, Wickets fall in last 5 overs to predict the score of the match as shown in the Fig.
 
+![Score Predictor](Score_predictor.png)
+
 We input the data as :
 
 Batting team: Chennai Super Kings
@@ -31,6 +33,8 @@ subtract 3 to give the range of score as shown in Fig.. So, our model works in t
 B. Probability Prediction Model
 
 The GUI requires batting team, bowling team, host city, target, current runs, overs completed, wickets out data as input to predict the probability of the IPL match as shown in the Fig.
+
+![Win Probability Predictor](IPL_win_predictor.png)
 
 We input the data as:
 
