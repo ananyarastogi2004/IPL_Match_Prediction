@@ -1,11 +1,16 @@
 # IPL_Match_Prediction
+The model predicts the IPL Second Inning Match Score using various algorithms like Linear Regression, Decision Tree 
+Regression, Random Forest Regressor, Support Vector Machine, XGBoost, KNR and predicts the IPL Match Winning 
+Probability using logistic regression and ANN algorithms.
+
+
 IMPLEMENTATION OF THE GUI
 
-The Graphical User Interface is developed for the machine learning models using the Streamlit application. For the backend of the site Python is used. All the input informationnecessary for the model for the prediction is provided to the model.
+The Graphical User Interface is developed for the machine learning models using the Streamlit application. For the backend of the site Python is used. All the input information necessary for the model for the prediction is provided to the model.
 
 A. Score Prediction Model
 
-The GUI requires at least 5 overs of the data to predict thescore .The model requires the input data of Batting team, Bowling team, Over, Runs, Wickets, Run Scored in last 5 overs, Wickets fall in last 5 overs to predict the score of the match as shown in the Fig.
+The GUI requires at least five overs of the data to predict the score. The model requires the input data of the Batting team, Bowling team, Over, Runs, Wickets, Run Scored in the last five overs, Wickets fall in the last five overs to predict the score of the match, as shown in Fig.
 
 ![Score Predictor](Score_predictor.png)
 
@@ -13,7 +18,7 @@ We input the data as :
 
 Batting team: Chennai Super Kings
 
-Bowling team:Mumbai Indians
+Bowling team: Mumbai Indians
 
 Current Over: 10.2
 
@@ -27,12 +32,12 @@ Wickets taken in last 5 Overs: 1
 
 Predicted Score Range: 130 to 136
 
-The output we got from the model is not exactly predicted output. So, to increase the accuracy of the model we add and
-subtract 3 to give the range of score as shown in Fig.. So, our model works in the majority of the cases.
+The output we got from the model is not exactly the predicted output. So, to increase the accuracy of the model, we add and
+subtract 3 to give the range of score as shown in Fig... So, our model works in the majority of the cases.
 
 B. Probability Prediction Model
 
-The GUI requires batting team, bowling team, host city, target, current runs, overs completed, wickets out data as input to predict the probability of the IPL match as shown in the Fig.
+The GUI requires the batting team, bowling team, host city, target, current runs, overs completed, and wickets out data as input to predict the probability of the IPL match, as shown in Fig.
 
 ![Win Probability Predictor](IPL_win_predictor.png)
 
@@ -52,10 +57,10 @@ Overs Completed: 10.20
 
 Wickets Out : 3
 
-Output we get is:
+The output we get is:
 
 Chennai Super Kings - 87%
 
 Mumbai Indians - 13%
 
-The chances of CSK winning the match is predicted by model as 87% and MI is 13 %
+The chances of CSK winning the match is predicted by the model as 87%, and MI is 13 %
